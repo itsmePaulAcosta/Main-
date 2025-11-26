@@ -1,0 +1,339 @@
+/* Override to keep hero left/right layout between 600px and 1200px
+   This file is intentionally specific and placed after styles.css so it wins
+   over conflicting rules that force a stacked (column) layout. */
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    section#home .hero-container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 90% !important;
+        max-width: 1300px !important;
+        margin: 0 auto !important;
+        position: relative !important;
+        z-index: 10 !important;
+        height: auto !important;
+    }
+
+    /* Keep the left profile image column on the left */
+    section#home .hero-left {
+        width: 45% !important;
+        position: relative !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        max-width: none !important;
+        flex: none !important;
+        margin: 0 !important;
+    }
+
+    /* Keep the right content column on the right */
+    section#home .hero-right {
+        width: 50% !important;
+        z-index: 3 !important;
+        display: block !important;
+        margin: 0 !important;
+        padding-left: 24px !important;
+        padding-right: 0 !important;
+    }
+
+    /* Ensure profile image keeps desktop size so layout matches desktop */
+    section#home .profile-img,
+    section#home .hero-profile-image img {
+        width: 450px !important;
+        height: 450px !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
+    }
+
+    /* Adjust role cards so they don't reflow under content */
+    section#home .role-cards-container {
+        flex-wrap: wrap !important;
+        gap: 18px !important;
+        align-items: flex-end !important;
+    }
+
+    section#home .role-card {
+        height: var(--role-card-height) !important;
+    }
+
+    /* Make sure hero main text styles remain left aligned */
+    section#home .hero-main-content {
+        text-align: left !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* Contact modal styles (appended) */
+.contact-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 11000;
+}
+.contact-modal[aria-hidden="false"] {
+    display: flex;
+}
+.contact-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(2,6,23,0.7);
+    backdrop-filter: blur(4px);
+}
+.contact-modal-panel {
+    position: relative;
+    background: #0f1724;
+    color: #e6eef8;
+    max-width: 520px;
+    width: calc(100% - 48px);
+    border-radius: 12px;
+    padding: 22px 22px 18px 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    z-index: 11001;
+}
+.contact-modal-panel h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+}
+.contact-modal-panel p { margin: 6px 0 16px 0; color: #cbd5e1; line-height: 1.5; }
+.contact-modal-panel a { color: var(--primary-color); font-weight: 700; text-decoration: none; }
+.contact-modal-close {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    color: #cbd5e1;
+    font-size: 22px;
+    cursor: pointer;
+}
+.contact-modal-actions { text-align: right; }
+.contact-modal-ok {
+    padding: 10px 18px;
+    background: var(--primary-color);
+    border: none;
+    color: #000;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* Make the About image smaller starting at 1000px so it doesn't dominate layout.
+   Uses !important to override inline width/height set in HTML. */
+@media (max-width: 1000px) {
+    #about .about-side-img,
+    .about-side-img {
+        width: 480px !important;
+        height: auto !important;
+        max-width: 90% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        object-fit: cover !important;
+    }
+    /* Reduce the explicit inline height on the image tag if present */
+    #about img.about-side-img {
+        height: auto !important;
+    }
+}
+
+/* Make it even smaller for narrower mid sizes to keep comfortable spacing */
+@media (max-width: 800px) {
+    #about .about-side-img,
+    .about-side-img {
+        width: 360px !important;
+        height: auto !important;
+        max-width: 86% !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* Desktop: preserve current desktop appearance while preventing the about
+   content from overflowing. Keep the image at desktop size but make the
+   right column flexible and constrained so it doesn't oversize the container. */
+@media (min-width: 1200px) {
+    /* set the image to the original desktop size */
+    #about .about-side-img {
+        width: 630px !important;
+        height: 800px !important;
+        max-width: 630px !important;
+        object-fit: cover !important;
+        margin-left: 28px !important;
+        display: block !important;
+    }
+
+    /* Right column: flexible but limited so it doesn't exceed container */
+    #about .about-right {
+        flex: 1 1 0 !important;
+        min-width: 0 !important; /* allow the column to shrink inside flex container */
+        box-sizing: border-box !important;
+        padding-left: 24px !important;
+    }
+
+    /* Ensure the left container doesn't shrink unexpectedly */
+    #about .about-left {
+        flex: 0 0 auto !important;
+    }
+}
+
+/* On medium-large screens keep image smaller so layout breaths (1000-1199px) */
+@media (min-width: 1000px) and (max-width: 1199px) {
+    #about .about-left {
+        flex: 0 0 auto !important;
+    }
+    #about .about-side-img {
+        width: 520px !important;
+        height: auto !important;
+        max-width: 48% !important;
+        margin-left: 16px !important;
+        display: block !important;
+    }
+    #about .about-right {
+        flex: 1 1 0 !important;
+        min-width: 0 !important; /* allow text to wrap and not force overflow */
+        padding-left: 16px !important;
+        overflow-wrap: anywhere !important;
+    }
+}
+
+/* Reduce profile image size on narrower screens within the 600-1200 range
+   so the two-column layout still fits comfortably (600–900px). */
+@media (min-width: 600px) and (max-width: 900px) {
+    section#home .hero-left {
+        width: 40% !important;
+    }
+    section#home .hero-right {
+        width: 55% !important;
+        padding-left: 16px !important;
+    }
+    section#home .profile-img,
+    section#home .hero-profile-image img {
+        width: 340px !important;
+        height: 340px !important;
+    }
+    /* Slightly reduce role card height to avoid vertical overflow */
+    section#home .role-card {
+        height: 180px !important;
+    }
+}
+
+/* Option: allow horizontal scrolling for the role cards between 600-900px.
+   This preserves the original look (cards remain their natural size) while
+   keeping them on a single row and avoiding wrapping/clipping. */
+@media (min-width: 600px) and (max-width: 900px) {
+    section#home .role-cards-container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important; /* keep one line */
+        gap: 12px !important;
+        justify-content: flex-start !important;
+        overflow-x: auto !important; /* allow horizontal scroll */
+        -webkit-overflow-scrolling: touch !important;
+        padding-bottom: 8px !important;
+        align-items: flex-end !important;
+        margin-top: 8px !important;
+    }
+
+    section#home .role-card {
+        flex: 0 0 auto !important; /* keep natural width */
+        min-width: 200px !important; /* ensures readable card */
+        max-width: 260px !important;
+        height: 160px !important;
+    }
+
+    section#home .role-card img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* Simple scrollbar styling for modern browsers */
+    section#home .role-cards-container::-webkit-scrollbar {
+        height: 8px;
+    }
+    section#home .role-cards-container::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.08);
+        border-radius: 8px;
+    }
+}
+
+/* Lock About & Hero positions so the layout at 912px stays the same up to 1125px.
+   This enforces a stable two-column layout (image left, content right) and
+   prevents the right column from overflowing or the left image from becoming too small. */
+@media (min-width: 912px) and (max-width: 1290px) {
+    /* About section: keep two columns with controlled sizes */
+    #about .about-left {
+        flex: 0 0 48% !important;
+        max-width: 48% !important;
+        box-sizing: border-box !important;
+    }
+
+    #about .about-side-img {
+        width: 100% !important; /* fill its column */
+        height: auto !important;
+        max-width: 520px !important; /* cap so right column has room */
+        display: block !important;
+        margin-left: 12px !important;
+        object-fit: cover !important;
+    }
+
+    #about .about-right {
+        flex: 1 1 0 !important;
+        min-width: 0 !important; /* allow shrinking/wrapping */
+        max-width: calc(52% - 12px) !important;
+        padding-left: 18px !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    /* Reduce container horizontal padding inside about so combined width fits */
+    #about .w-full.flex.justify-center {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+    }
+
+    /* Hero: ensure two-column appearance matches desktop within this range */
+    section#home .hero-container {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 92% !important;
+        max-width: 1300px !important;
+    }
+    section#home .hero-left { width: 44% !important; }
+    section#home .hero-right { width: 52% !important; padding-left: 18px !important; }
+    section#home .profile-img { width: 380px !important; height: 380px !important; }
+
+    /* Split the "ABOUT ME" background title into two lines for this range
+       by hiding the desktop single-line span and showing the mobile split span. */
+    #about .outline-title .about-title-desktop {
+        display: none !important;
+    }
+    #about .outline-title .about-title-mobile {
+        display: block !important;
+        /* tighten sizes so the split title doesn't overpower the layout */
+        font-size: clamp(48px, 5.2vw, 76px) !important;
+        line-height: 0.92 !important;
+        color: transparent !important;
+        -webkit-text-stroke: 1px rgba(195, 201, 220, 0.42) !important;
+        -webkit-text-fill-color: transparent !important;
+        opacity: 0.62 !important; /* subtle background title */
+        transform: translateY(-6px) !important; /* nudge upward for layering */
+        margin-bottom: 4px !important;
+        white-space: normal !important;
+        display: block !important;
+        pointer-events: none !important;
+    }
+
+    /* Slight vertical adjustment so the split title sits nicely behind content */
+    #about .outline-title {
+        margin-bottom: 2px !important;
+        position: relative !important;
+        z-index: 0 !important;
+        opacity: 0.98 !important;
+    }
+}

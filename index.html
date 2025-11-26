@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhonpaul Acosta | Main Portfolio 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span class="scroll-text">SCROLL</span>
+        <div class="scroll-dashes">- - - - - - - - - - - - - -</div>
+    </div>
+
+    <!-- Top Left JP Logo -->
+    <div class="top-left-logo">
+        <div class="jp-logo">JP</div>
+    </div>
+
+    <!-- Top Right Controls (plain text resume + inline theme dots) -->
+    <div class="top-controls">
+        <a href="updated resume JOHNPAUL ACOSTA.pdf" target="_blank" class="resume-link">Resume</a>
+        <div class="theme-list" style="position:relative;">
+            <span class="theme-label" id="themeLabel" style="cursor:pointer;">Themes</span>
+            <div class="theme-options-dropdown" style="opacity:0;pointer-events:none;transition:opacity 0.18s;flex-direction:row;gap:6px;margin-top:8px;position:absolute;left:-70px;top:100%;z-index:10;background:transparent;width:auto;box-sizing:border-box;">
+                <a href="#" class="theme-option" data-theme="green" title="Green" style="background: #00ff88;">&nbsp;</a>
+                <a href="#" class="theme-option" data-theme="blue" title="Blue" style="background: #4ecdc4;">&nbsp;</a>
+                <a href="#" class="theme-option" data-theme="purple" title="Purple" style="background: #6c5ce7;">&nbsp;</a>
+                <a href="#" class="theme-option" data-theme="orange" title="Orange" style="background: #fd79a8;">&nbsp;</a>
+                <a href="#" class="theme-option" data-theme="yellow" title="Yellow" style="background: #FFFF00;">&nbsp;</a>
+                <a href="#" class="theme-option" data-theme="red" title="Red" style="background: #FF0000;">&nbsp;</a>
+                <a href="#" class="theme-option" data-theme="cyan" title="Cyan" style="background: #00F8C9;">&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-bg-shape"></div>
+            <div class="hero-bg-dots"></div>
+        </div>
+        
+        <div class="hero-container">
+            <!-- Left side profile image -->
+            <div class="hero-left">
+                <div class="hero-profile-image">
+                    <img src="images/no bg profile.png" alt="Profile Picture" class="profile-img">
+                </div>
+            </div>
+            
+            <!-- Right side content -->
+            <div class="hero-right">
+                <div class="hero-main-content">
+                    <div>
+                        <h1 class="relative leading-none tracking-expand text-8xl xl:text-9xl font-black font-primary z-30">J<span class="text-accent">4</span>PAUL</h1>
+                        <h1 class="outline-title leading-none tracking-expand text-8xl xl:text-9xl font-primary opacity-70 -mt-[85px] xl:-mt-28 ml-2 z-20">J4PAUL</h1>
+                    </div>
+
+                    <p class="text-darkGray font-secondary text-sm pr-0 2xl:pr-28 leading-6 mb-8">
+                        A creative web designer, I craft digital experiences that leave a lasting
+                        impression. With a keen eye for aesthetics and a knack for turning ideas into
+                        stunning websites, I bring your online vision to life.
+                    </p>
+
+                    <div class="social-connect mb-8">
+                        <a href="#contact" class="connect-btn">CONNECT</a>
+
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="role-cards-container mt-auto">
+                    <div class="role-card">
+                        <img src="images/codm hobby.webp" alt="Gamer">
+                        <p>Gamer</p>
+                    </div>
+
+                    <div class="role-card">
+                        <img src="images/creative_graphic_design.jpg" alt="Graphic Designer">
+                        <p>Designer</p>
+                    </div>
+
+                    <div class="role-card">
+                        <img src="images/developr.jpg" alt="Developer">
+                        <p>Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating decorative elements -->
+        <div class="floating-elements">
+            <div class="float-circle float-1"></div>
+            <div class="float-circle float-2"></div>
+            <div class="float-square float-3"></div>
+        </div>
+    </section>
+    
+    <!-- Statistics Section -->
+    <section class="flex justify-center px-4 lg:px-10 xl:px-20 py-6 lg:py-8 bg-secondary/10 filter backdrop-blur-md aos-init aos-animate" data-aos="fade-right">
+        <div class="w-full max-w-screen-2xl stats-big-container" style="max-width:1800px;padding:48px 0;">
+            <div class="flex justify-center items-center gap-16 xl:gap-32 stats-big-row">
+                <div class="flex-1 flex items-center justify-center flex-col text-center">
+                    <div class="flex items-center justify-center flex-col gap-3">
+                        <div class="stats-inline">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-accent stats-icon" width="2.1em" height="2.1em" viewBox="0 0 24 24">
+                              <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M2 21h15m4 0h1"></path>
+                                  <path d="M2 16.4V3.6a.6.6 0 0 1 .6-.6h18.8a.6.6 0 0 1 .6.6v12.8a.6.6 0 0 1-.6.6H2.6a.6.6 0 0 1-.6-.6Z"></path>
+                              </g>
+                          </svg>
+                          <h2 class="font-primary stats-number text-slate-300"><span>9</span> </h2>
+                        </div>
+                    </div>
+                    <p class="text-darkGray text-xs mt-3 leading-6">Different Website Created</p>
+                </div>
+                <div class="flex-1 flex items-center justify-center flex-col text-center">
+                    <div class="flex items-center justify-center flex-col gap-3">
+                        <div class="stats-inline">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-accent stats-icon" width="2.1em" height="2.1em" viewBox="0 0 24 24">
+                              <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                  <path d="M9.533 11.15A1.82 1.82 0 0 0 9 12.438V15h2.578c.483 0 .947-.192 1.289-.534l7.6-7.604a1.82 1.82 0 0 0 0-2.577l-.751-.751a1.82 1.82 0 0 0-2.578 0z"></path>
+                                  <path d="M21 12c0 4.243 0 6.364-1.318 7.682S16.242 21 12 21s-6.364 0-7.682-1.318S3 16.242 3 12s0-6.364 1.318-7.682S7.758 3 12 3"></path>
+                              </g>
+                          </svg>
+                          <h2 class="font-primary stats-number text-slate-300"><span>1</span></h2>
+                        </div>
+                    </div>
+                    <p class="text-darkGray text-xs mt-3 leading-6">Existing Website Redesigned</p>
+                </div>
+                <div class="flex-1 flex items-center justify-center flex-col text-center">
+                    <div class="flex items-center justify-center flex-col gap-3">
+                                                <div class="stats-inline">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-accent stats-icon" width="2.1em" height="2.1em" viewBox="0 0 24 24">
+                                                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 9V6a2 2 0 0 1 2-2h3m11 11v3a2 2 0 0 1-2 2h-3m0-16h3a2 2 0 0 1 2 2v3M9 20H6a2 2 0 0 1-2-2v-3"></path>
+                                                    </svg>
+                                                    <h2 class="font-primary stats-number text-slate-300"><span>2</span> Years</h2>
+                                                </div>
+                    </div>
+                    <p class="text-darkGray text-xs mt-3 leading-6">Solid Web Design Experience</p>
+                </div>
+                <div class="flex-1 flex items-center justify-center flex-col text-center">
+                    <div class="flex items-center justify-center flex-col gap-3">
+                        <div class="stats-inline">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-accent stats-icon" width="2.1em" height="2.1em" viewBox="0 0 256 256">
+                              <g fill="currentColor">
+                                  <path d="M104 104v104H40a8 8 0 0 1-8-8v-96Z" opacity=".2"></path>
+                                  <path d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 16v40H40V56ZM40 112h56v88H40Zm176 88H112v-88h104z"></path>
+                              </g>
+                          </svg>
+                          <h2 class="font-primary stats-number text-slate-300"><span>4</span> months</h2>
+                        </div>
+                    </div>
+                    <p class="text-darkGray text-xs mt-3 leading-6">Graphic Design Experience</p>
+                </div>
+                   
+            </div>
+        </div>
+    </section>
+
+ 
+ <section class="w-full flex justify-center py-10 px-4 lg:px-10 xl:px-20" style="padding-top:140px;padding-bottom:60px;">
+    <style>
+        .masonry-grid {
+            column-count: 3;
+            column-gap: 17px;
+            max-width: 1395px;
+            width: 100%;
+        }
+
+        .masonry-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 17px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            filter: grayscale(100%) brightness(0.3);
+            transition: filter 0.4s, transform 0.3s;
+        }
+
+        .masonry-grid img:hover {
+            filter: none;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+            .masonry-grid {
+                column-count: 3;
+                max-width: 98vw;
+                column-gap: 8px;
+            }
+            .masonry-grid img {
+                border-radius: 8px;
+                margin-bottom: 8px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .masonry-grid {
+                column-count: 3;
+                max-width: 99vw;
+                column-gap: 4px;
+            }
+            .masonry-grid img {
+                border-radius: 6px;
+                margin-bottom: 4px;
+            }
+        }
+    </style>
+        <style>
+        /* Removed all inline and embedded style overrides for .outline-title, h2, p, and about-side-img in index.html for 600px–900px. Only use the main CSS file for responsive control. */
+        </style>
+
+    <div class="masonry-grid">
+        <img src="projects in ojt graphic design/image edit/sample_image1.jpg" />
+        <img src="projects in ojt graphic design/landing pages/landing_page1.jpg" />
+        <img src="projects in ojt graphic design/banner/day-5 bussiness card.png" />
+        <img src="projects in ojt graphic design/landing pages/landing_page3.jpg" />
+        <img src="projects in ojt graphic design/graphic/zone3.png" />
+        <img src="projects in ojt graphic design/landing pages/landing_page5.jpg"/>
+        <img src="projects in ojt graphic design/landing pages/landing_page6.jpg"/>
+        <img src="projects in ojt graphic design/landing pages/landing_page4.jpg"/>
+        <img src="projects in ojt graphic design/landing pages/landing_page2.jpg"/>
+        <img src="projects in ojt graphic design/landing pages/landing_page7.jpg"/>
+        <img src="projects in ojt graphic design/graphic/day-8 resto menu(letter portrait).png"/>
+        <img src="projects in ojt graphic design/landing pages/lamarea landing page.png"/>
+        <img src="projects in ojt graphic design/graphic/slumber 2.png"/>
+      
+    
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                   <div class="heading-wrap w-full text-center" style="position:relative;">
+                        <span class="outline-title block"
+                              style="
+                                  font-weight: 790;     
+                                  letter-spacing: 0.05em;
+                                  color: transparent;
+                                  -webkit-text-stroke: 1.5px rgba(195, 201, 220, 0.35);
+                                  font-size: clamp(110px, 5vw, 110px);
+                                  line-height: 1;
+                                  margin-bottom: 18px;
+                                  white-space: nowrap; /* prevents wrapping */">
+                    MY SKILLS
+                </span>
+                          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-primary -mt-10 xl:-mt-12 text-slate-300" style="font-size:clamp(50px, 4vw, 48px);font-weight:1000;letter-spacing: 0.07em;">What I Do?</h2>
+                <style>
+    /* Extra small screens adjustment */
+    @media (max-width: 480px) {
+        .outline-title {
+            font-size: 50px !important; /* force smaller font on very small screens */
+        }
+        .heading-wrap h2 {
+            font-size: 30px !important; /* smaller h2 */
+            padding-top:20px;
+            letter-spacing: 0.07em !important;
+        }
+        /* Reduce top padding for gallery and services section */
+        section.w-full.flex.justify-center {
+            padding-top: 40px !important;
+            padding-bottom: 20px !important;
+        }
+        section#services {
+            padding-top: 10px !important;
+            margin-top: 0 !important;
+        }
+        .services-grid {
+            padding-top: 0 !important;
+            margin-top: -40px !important;
+        }
+    }
+</style>
+                </div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" style="text-align:left">
+                    <span style="font-size:2.5rem;color:var(--primary-color);display:inline-block;margin-bottom:10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2 21h15m4 0h1"></path><path d="M2 16.4V3.6a.6.6 0 0 1 .6-.6h18.8a.6.6 0 0 1 .6.6v12.8a.6.6 0 0 1-.6.6H2.6a.6.6 0 0 1-.6-.6Z"></path></g></svg>
+                    </span>
+                    <h4 style="color:#F9F8F6">WEB DESIGN</h4>
+                    <p class="text-darkGray text-sm leading-6">Transforming visions into captivating and responsive websites that engage and inspire.</p>
+                        <a href="projects in ojt graphic design/landing pages/landing page-real estate.png" class="service-link text-darkGray text-sm leading-6" data-sample="projects in ojt graphic design/landing pages/landing page-real estate.png">View Sample</a>
+                </div>
+                <div class="service-card" style="text-align:left">
+                    <span style="font-size:2.5rem;color:var(--primary-color);display:inline-block;margin-bottom:10px;">
+                        <i class="fas fa-code"></i>
+                    </span>
+                    <h4 style="color:#F9F8F6">WEB DEVELOPMENT</h4>
+                    <p class="text-darkGray text-sm leading-6">Build and maintain websites, creating functionality which help businesses promote their product.</p>
+                        <a href="#" class="service-link text-darkGray text-sm leading-6" data-sample="images/web-development-sample.jpg">View Sample</a>
+                </div>
+                <div class="service-card" style="text-align:left">
+                    <span style="font-size:2.5rem;color:var(--primary-color);display:inline-block;margin-bottom:10px;">
+                        <i class="fas fa-object-group"></i>
+                    </span>
+                    <h4 style="color:#F9F8F6">UI / UX DESIGN</h4>
+                    <p class="text-darkGray text-sm leading-6">Optimizing user experience, creating intuitive interfaces and ensuring its smooth interactions.</p>
+                        <a href="#" class="service-link text-darkGray text-sm leading-6" data-sample="images/ui-ux-design-sample.jpg">View Sample</a>
+                </div>
+                <div class="service-card" style="text-align:left">
+                    <span style="font-size:2.5rem;color:var(--primary-color);display:inline-block;margin-bottom:10px;">
+                        <i class="fas fa-paint-brush"></i>
+                    </span>
+                    <h4 style="color:#F9F8F6">GRAPHICS DESIGN</h4>
+                    <p class="text-darkGray text-sm leading-6">Creating visual concept for a variety of projects, such as advertisements, logos and other digital prints.</p>
+                        <a href="#" class="service-link text-darkGray text-sm leading-6" data-sample="images/graphics-design-sample.jpg">View Sample</a>
+                </div>
+                <div class="service-card" style="text-align:left">
+                    <span style="font-size:2.5rem;color:var(--primary-color);display:inline-block;margin-bottom:10px;">
+                        <i class="fas fa-image"></i>
+                    </span>
+                    <h4 style="color:#F9F8F6">PHOTO EDITING</h4>
+                    <p class="text-darkGray text-sm leading-6">Manipulate and enhance images to improve their quality and create visually appealing compositions.</p>
+                        <a href="#" class="service-link text-darkGray text-sm leading-6" data-sample="images/photo-editing-sample.jpg">View Sample</a>
+                </div>
+                <div class="service-card" style="text-align:left">
+                    <span style="font-size:2.5rem;color:var(--primary-color);display:inline-block;margin-bottom:10px;">
+                        <i class="fas fa-camera"></i>
+                    </span>
+                    <h4 style="color:hsl(40, 20%, 97%)">PHOTOGRAPHY</h4>
+                    <p class="text-darkGray text-sm leading-6">Capture and create images to document events, tell stories, evoke emotions, or convey messages visually.</p>
+                        <a href="#" class="service-link text-darkGray text-sm leading-6" data-sample="images/photography-sample.jpg">View Sample</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="w-full flex justify-center py-10 px-4 lg:px-10 xl:px-20" style="padding-top:5px;padding-bottom:5px;">
+            <div class="w-full flex flex-col gap-4 md:gap-14 md:flex-row max-w-screen-2xl" style="max-width:1440px;">
+                <!-- Left side - Image -->
+                <div class="w-auto h-full xl:w-1/2 about-left" style="margin-right:-5px;">
+                    <img src="images/tele.jpg" loading="lazy" class="about-side-img object-cover rounded-none md:rounded-2xl aos-init aos-animate" alt="John Paul Acosta" data-aos="fade-right">
+                </div>
+                
+                <!-- Right side - Content -->
+                <div class="w-full xl:w-1/2 flex flex-col justify-center gap-4 about-right aos-init aos-animate" data-aos="fade-left">
+                    <!-- Background title -->
+                    <span class="outline-title block"
+                                                    style="
+                                                            font-weight: 790;
+                                                            letter-spacing: 0.05em;
+                                                            color: transparent;
+                                                            -webkit-text-stroke: 1.5px rgba(195, 201, 220, 0.35);
+                                                            font-size: clamp(110px, 5vw, 110px);
+                                                            line-height: 1;
+                                                            margin-bottom: 10px;
+                                                            white-space: nowrap;
+                                                    ">
+                                                <span class="about-title-desktop">ABOUT ME</span><span class="about-title-mobile" style="display:none;">ABOUT<br>ME</span>
+                    </span>
+                    
+                    <!-- Main title -->
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-primary -mt-10 xl:-mt-12 text-slate-300" style="font-size:clamp(20px, 4vw, 48px);font-weight:1000;">Hi I'm John Paul</h2>
+                    
+                    <!-- Description -->
+                    <p class="text-darkGray text-sm leading-6">I'm a BSIT graduate skilled in web development and graphic design. I build responsive websites with HTML, CSS, JavaScript, PHP, and MySQL, and design using Photoshop, Figma, and Canva. I'm enhancing my backend skills and enjoy creating simple 2D games with Stencyl.</p>
+                    
+                    <!-- Tab navigation -->
+                    <ul class="text-slate-300 text-sm" role="tablist" aria-label="About Tabs" style="width:100%;">
+                        <li class="cursor-pointer font-primary active" role="tab" aria-selected="true" aria-controls="skills" tabindex="0" data-tab="skills" id="tab-skills" style="margin-right:48px;">
+                            <span style="background-color: rgba(8, 0, 84, 0.1); border-radius: 12px; padding: 8px 0 8px 0; color: #F9F8F6;">SKILLS</span>
+                            <div class="h-1 w-10 bg-accent2 rounded-md mt-1 tab-underline active"></div>
+                        </li>
+                        <li class="cursor-pointer font-primary" role="tab" aria-selected="false" aria-controls="experience" tabindex="-1" data-tab="experience" id="tab-experience" style="margin-right:48px;">
+                            <span style="background-color: rgba(8, 0, 84, 0.1); border-radius: 12px; padding: 8px 0 8px 0; color: #F9F8F6;">EXPERIENCE</span>
+                            <div class="h-1 w-10 bg-accent2 rounded-md mt-1 tab-underline"></div>
+                        </li>
+                        <li class="cursor-pointer font-primary" role="tab" aria-selected="false" aria-controls="certification" tabindex="-1" data-tab="certification" id="tab-certification">
+                            <span style="background-color: rgba(8, 0, 84, 0.1); border-radius: 12px; padding: 8px 0 8px 0; color: #F9F8F6;">CERTIFICATION</span>
+                            <div class="h-1 w-10 bg-accent2 rounded-md mt-1 tab-underline"></div>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab content -->
+                    <div class="tab-content">
+                        <!-- Skills Pane -->
+                        <div id="skills" class="tab-pane active" role="tabpanel" aria-labelledby="tab-skills" aria-hidden="false" tabindex="0">
+                            <div class="text-darkGray p-8 xl:p-10 rounded-2xl mt-6" style="background-color: rgba(8, 0, 84, 0.536);">
+                                <div class="skills-section">
+                                    <div class="skills-tools-group">
+                                        <p class="text-darkGray text-sm leading-6" style="margin-bottom:8px;">Design Tools</p>
+                                        <div class="skills-icon-grid">
+                                            <span class="skill-icon" title="Photoshop"><i class="devicon-photoshop-plain"></i></span>
+                                            <span class="skill-icon" title="Illustrator"><i class="devicon-illustrator-plain"></i></span>
+                                            <span class="skill-icon" title="Figma"><i class="fab fa-figma"></i></span>
+                                            <span class="skill-icon" title="Canva"><i class="fas fa-paint-brush"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills-tools-group" style="margin-top:24px;">
+                                        <p class="text-darkGray text-sm leading-6" style="margin-bottom:8px;">Development Tools</p>
+                                        <div class="skills-icon-grid">
+                                            <span class="skill-icon"><i class="fab fa-html5"></i></span>
+                                            <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+                                            <span class="skill-icon"><i class="fab fa-js"></i></span>
+                                            <span class="skill-icon"><i class="fab fa-php"></i></span>
+                                            <span class="skill-icon"><i class="fas fa-database"></i></span>
+                                            <span class="skill-icon"><i class="fab fa-wordpress"></i></span>
+                                        </div>
+                                    </div>
+                                    <style>
+                                    .skills-icon-grid {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        gap: 18px;
+                                        margin-bottom: 18px;
+                                    }
+                                    .skill-icon {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 40px;
+                                        height: 40px;
+                                        background: transparent;
+                                        border-radius: 0;
+                                        box-shadow: none;
+                                    }
+                                    .skill-icon i {
+                                        font-size: 40px;
+                                        color: #b7bad6;
+                                        transition: color 0.3s;
+                                    }
+                                    .skill-icon i:hover {
+                                        color: var(--primary-color, #00ff88); /* theme color on hover */
+                                    }
+                                    </style>
+                                    <div class="soft-skills">
+                                        <!-- Soft Skills heading removed as requested -->
+                                        <div class="skills-tags">
+                                            <span class="skill-tag" style="font-size:0.66em;background:var(--primary-color,#00ff88);color:#111;border-radius:8px;padding:4px 12px;margin-right:6px;margin-bottom:6px;">Problem Solver</span>
+                                            <span class="skill-tag" style="font-size:0.66em;background:var(--primary-color,#00ff88);color:#111;border-radius:8px;padding:4px 12px;margin-right:6px;margin-bottom:6px;">Teamwork</span>
+                                            <span class="skill-tag" style="font-size:0.66em;background:var(--primary-color,#00ff88);color:#111;border-radius:8px;padding:4px 12px;margin-right:6px;margin-bottom:6px;">Communication</span>
+                                            <span class="skill-tag" style="font-size:0.66em;background:var(--primary-color,#00ff88);color:#111;border-radius:8px;padding:4px 12px;margin-right:6px;margin-bottom:6px;">Adaptability</span>
+                                            <span class="skill-tag" style="font-size:0.66em;background:var(--primary-color,#00ff88);color:#111;border-radius:8px;padding:4px 12px;margin-right:6px;margin-bottom:6px;">Creativity</span>
+                                            <span class="skill-tag" style="font-size:0.66em;background:var(--primary-color,#00ff88);color:#111;border-radius:8px;padding:4px 12px;margin-right:6px;margin-bottom:6px;">Flexibility</span>
+                                            <span class="skill-tag" style="font-size:0.66em;background:var(--primary-color,#00ff88);color:#111;border-radius:8px;padding:4px 12px;margin-right:6px;margin-bottom:6px;">Time Management</span>
+                                              
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Pane -->
+                        <div id="experience" class="tab-pane" role="tabpanel" aria-labelledby="tab-experience" aria-hidden="true" tabindex="0">
+                            <div class="text-darkGray p-8 xl:p-10 rounded-2xl mt-6" style="background-color: rgba(8, 0, 84, 0.536);">
+                                <ol class="border-l text-sm border-accent2 border-dashed pl-4">
+                                    <li>
+                                        <div class="flex flex-start items-center">
+                                            <div class="bg-accent2 w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-2"></div>
+                                            <h4 class="-mt-2 text-slate-300">Rockstar Web Design Services</h4>
+                                        </div>
+                                        <div class="ml-6 mb-6 mt-1">
+                                            <p class="text-accent2 text-sm leading-6">2025 - OJT / Intern</p>
+                                            <p class="text-sm mt-3 leading-6">Worked with the Production team creating graphic designs, redesigning landing pages and improving website content and layout using GoHighLevel, ClickFunnels and Adobe Photoshop.</p>
+                                        </div>
+                                    </li>
+                                    <!-- Additional experience entries 
+                                    <li>
+                                        <div class="flex flex-start items-center">
+                                            <div class="bg-accent2 w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-2"></div>
+                                            <h4 class="-mt-2 text-slate-300">Freelance / Personal Projects</h4>
+                                        </div>
+                                        <div class="ml-6 mb-6 mt-1">
+                                            <p class="text-accent2 text-sm leading-6">2024 - Web & Graphics</p>
+                                            <p class="text-sm mt-3 leading-6">Built simple responsive websites and landing pages using HTML, CSS, JavaScript and WordPress; created promotional graphics and edited photos for clients.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex flex-start items-center">
+                                            <div class="bg-accent2 w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-2"></div>
+                                            <h4 class="-mt-2 text-slate-300">Graphics Designer | Amare Apparel</h4>
+                                        </div>
+                                        <div class="ml-6 mb-6 mt-1">
+                                            <p class="text-accent2 text-sm leading-6">September 2020 - November 2021</p>
+                                            <p class="text-sm mt-3 leading-6">Creating Design for T-Shirt Sublimation, Tarpaulin and Other Digital Prints. Also Maintain and Troubleshoot Printers.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flex flex-start items-center">
+                                            <div class="bg-tertiary border-2 border-accent2 w-4 h-4 flex items-center justify-center rounded-full -ml-6 mr-7 -mt-2"></div>
+                                            <h4 class="-mt-2 text-slate-300">Present</h4>
+                                        </div>
+                                    </li>
+                                    -->
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Certification Pane -->
+                        <div id="certification" class="tab-pane" role="tabpanel" aria-labelledby="tab-certification" aria-hidden="true" tabindex="0">
+                            <div class="text-darkGray p-8 xl:p-10 rounded-2xl mt-6" style="background-color: rgba(8, 0, 84, 0.536);">
+                                <h4><i class="fas fa-certificate"></i> Certificates</h4>
+                                <p class="muted">Click any certificate to view it full-size.</p>
+                                <div class="cert-grid">
+                                    <button class="cert-thumb" data-src="images/playstore certifiacates.png" aria-label="Open certificate 1">
+                                        <img src="images/playstore certifiacates.png" alt="Certificate 1">
+                                    </button>
+                                    <button class="cert-thumb" data-src="images/ojt rockstar certificates.jpg" aria-label="Open certificate 2">
+                                        <img src="images/ojt rockstar certificates.jpg" alt="Certificate 2">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="heading-wrap w-full text-center" style="position:relative;">
+                    <span class="outline-title block" style="font-weight:790;letter-spacing:0.05em;color:transparent;-webkit-text-stroke:1.5px rgba(195,201,220,0.35);line-height:1;white-space:nowrap;text-align:left;display:block;">
+                        CONNECT
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-primary -mt-10 xl:-mt-12 text-slate-300" style="font-weight:1000;letter-spacing:0.07em;text-align:left;">Get in Touch</h2>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    
+                  
+                    <p class="text-darkGray font-secondary text-sm pr-0 2xl:pr-28 leading-6 mb-8">
+                        Thank you for taking the time to explore my portfolio! If you have any
+                        inquiries, collaboration proposals, or simply wish to connect, I would love to hear from
+                        you. Please don't hesitate to reach out. I'm eager to connect with you.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span class="text-darkGray font-secondary text-sm pr-0 2xl:pr-28 leading-6 mb-8" style="margin:8px 0; padding:4px 12px; display:inline-block;">jhonpaula846@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="text-darkGray font-secondary text-sm pr-0 2xl:pr-28 leading-6 mb-8" style="margin:8px 0; padding:4px 12px; display:inline-block;">REINA MERCEDES ISABELA, PHILIPPINES</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" style="background-color: rgba(8, 0, 84, 0.536);;border-radius:18px; margin-top:-90px; padding:32px 24px;box-shadow:0 2px 16px rgba(8,0,84,0.08);">
+                    <h4 class="text-darkGray font-secondary text-sm pr-0 2xl:pr-28 leading-6 mb-8">Tell Me Something</h4>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required style="background:#fff;color:#222;">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required style="background:#fff;color:#222;">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required style="background:#fff;color:#222;"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="resume-section">
+            <div class="footer-main">
+                <div class="resume-section">
+                        <h2 class="text-2xl lg:text-4xl font-primary text-slate-300" style="font-size:clamp(28px,3vw,48px);font-weight:1000;letter-spacing:0.07em;text-align:center;margin-bottom:38px;margin-top: 20px;">Want to know More?</h2>
+                            <a href="updated resume JOHNPAUL ACOSTA.pdf" target="_blank" class="resume-link" style="display:inline-block;padding:12px 32px;border-radius:12px;background:var(--primary-color,#00ff88);color:#111 !important;font-weight:700;box-shadow:0 2px 12px rgba(0,0,0,0.08);transition:background 0.2s;">Download Resume</a>
+                    <p style="color:var(--accent2,#ffffff);">or visit</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" style="font-size:2rem;margin:0 8px;color:#888;transition:color 0.2s;"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" style="font-size:2rem;margin:0 8px;color:#888;transition:color 0.2s;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link" style="font-size:2rem;margin:0 8px;color:#888;transition:color 0.2s;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" style="font-size:2rem;margin:0 8px;color:#888;transition:color 0.2s;"><i class="fab fa-instagram"></i></a>
+                                    <style>
+                                    .footer-main .social-link:hover {
+                                        color: var(--primary-color,#00ff88) !important;
+                                        ;
+                                    }
+
+                                    </style>
+                    </div>
+                </div>
+                <div class="container">
+                    <div style="margin-top:32px;">
+                        <p style="color:var(--accent2,#ffffff);font-weight:600;">&copy; JOHN PAUL ACOSTA | Portfolio 2025</p>
+                        <p>Made With Pure Hardwork And Love.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Floating Bottom Navigation -->
+    <nav class="floating-nav">
+        <div class="px-6 py-3 text-slate-300 bg-white/10 flex gap-4 text-2xl fixed rounded-full justify-center bottom-8 backdrop-blur">
+            <a href="#home" class="text-white/50 hover:bg-accent2 rounded-md p-1 hover:text-tertiary transition">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--iconamoon" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M20 10a1 1 0 1 0-2 0zM6 10a1 1 0 0 0-2 0zm14.293 2.707a1 1 0 0 0 1.414-1.414zM12 3l.707-.707a1 1 0 0 0-1.414 0zm-9.707 8.293a1 1 0 1 0 1.414 1.414zM7 22h10v-2H7zm13-3v-9h-2v9zM6 19v-9H4v9zm15.707-7.707l-9-9l-1.414 1.414l9 9zm-10.414-9l-9 9l1.414 1.414l9-9zM17 22a3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1zM7 20a1 1 0 0 1-1-1H4a3 3 0 0 0 3 3z"></path>
+                </svg>
+            </a>
+            <a href="#services" class="text-white/50 hover:bg-accent2 rounded-md p-1 hover:text-tertiary transition">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--iconamoon" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 9V6a2 2 0 0 1 2-2h3m11 11v3a2 2 0 0 1-2 2h-3m0-16h3a2 2 0 0 1 2 2v3M9 20H6a2 2 0 0 1-2-2v-3"></path>
+                </svg>
+            </a>
+            <a href="#about" class="text-white/50 hover:bg-accent2 rounded-md p-1 hover:text-tertiary transition">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide" width="1em" height="1em" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <circle cx="12" cy="8" r="5"></circle>
+                        <path d="M20 21a8 8 0 0 0-16 0"></path>
+                    </g>
+                </svg>
+            </a>
+            <a href="#contact" class="text-accent2 hover:bg-accent2 rounded-md p-1 hover:text-tertiary transition">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide" width="1em" height="1em" viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <script src="script.js"></script>
+    <!-- Contact modal (shows when contact form is submitted) -->
+    <div id="contactModal" class="contact-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="contactModalTitle">
+        <div class="contact-modal-backdrop" tabindex="-1"></div>
+        <div class="contact-modal-panel" role="document">
+            <button class="contact-modal-close" aria-label="Close contact dialog">×</button>
+            <h3 id="contactModalTitle">Contact Form Temporarily Unavailable</h3>
+            <p>The contact form is currently under maintenance. You can still reach me directly at <a href="mailto:jhonpaula846@gmail.com">jhonpaula846@gmail.com</a>. Sorry for the inconvenience.</p>
+            <div class="contact-modal-actions">
+                <button class="contact-modal-ok">OK</button>
+            </div>
+        </div>
+    </div>
+    <!-- Lightbox for certificate preview -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview dialog" aria-hidden="true" tabindex="-1">
+        <button class="close-btn" id="lightboxClose" aria-label="Close preview">×</button>
+        <img id="lightboxImage" src="" alt="Certificate preview">
+    </div>
+
+    <!-- Add a hidden modal for image preview -->
+    <div id="sampleModal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;">
+      <span id="closeSampleModal" style="position:absolute;top:30px;right:40px;font-size:2rem;color:#fff;cursor:pointer;">&times;</span>
+      <img id="sampleModalImg" src="" alt="Sample" style="max-width:90vw;max-height:90vh;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.5);">
+    </div>
+
+    <script>
+    // Theme dropdown: hover for desktop, tap for mobile
+    const themeList = document.querySelector('.theme-list');
+    const themeDropdown = document.querySelector('.theme-options-dropdown');
+    let isMobile = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    let dropdownOpen = false;
+
+    function showDropdown() {
+        themeDropdown.style.opacity = '1';
+        themeDropdown.style.pointerEvents = 'auto';
+        dropdownOpen = true;
+    }
+    function hideDropdown() {
+        themeDropdown.style.opacity = '0';
+        themeDropdown.style.pointerEvents = 'none';
+        dropdownOpen = false;
+    }
+
+    if (isMobile) {
+        themeList.addEventListener('click', function(e) {
+            // Only open if not already open and not clicking a color
+            if (!dropdownOpen && !e.target.classList.contains('theme-option')) {
+                showDropdown();
+            }
+        });
+        // Close when tapping outside
+        document.addEventListener('click', function(e) {
+            if (dropdownOpen && !themeList.contains(e.target)) {
+                hideDropdown();
+            }
+        });
+        // Close when selecting a color
+        themeDropdown.querySelectorAll('.theme-option').forEach(option => {
+            option.addEventListener('click', function() {
+                hideDropdown();
+            });
+        });
+    } else {
+        themeList.addEventListener('pointerenter', showDropdown);
+        themeList.addEventListener('pointerleave', hideDropdown);
+    }
+    // Show sample image in modal
+    const sampleLinks = document.querySelectorAll('.service-link[data-sample]');
+    const modal = document.getElementById('sampleModal');
+    const modalImg = document.getElementById('sampleModalImg');
+    const closeModal = document.getElementById('closeSampleModal');
+    sampleLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        modalImg.src = link.getAttribute('data-sample');
+        modal.style.display = 'flex';
+      });
+    });
+    closeModal.addEventListener('click', function() {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    });
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        modalImg.src = '';
+      }
+    });
+    </script>
+</body>
+</html>
